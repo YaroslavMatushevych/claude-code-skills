@@ -9,6 +9,7 @@ Install the whole marketplace once, then pick which skills to install:
 /plugin install context-budget-statusline@yaroslav-skills
 /plugin install committing-with-intent@yaroslav-skills
 /plugin install drafting-pr-descriptions@yaroslav-skills
+/plugin install citogenesis@yaroslav-skills
 ```
 
 ## context-budget-statusline
@@ -64,6 +65,12 @@ Full details: [`skills/committing-with-intent/SKILL.md`](skills/committing-with-
 Structures PR descriptions around what/why, risk, and testing *actually done* — the fix for the top reviewer complaint about AI-written PRs, which isn't tone, it's effort asymmetry (a description implying review work that wasn't done). Detects and fills the repo's own `PULL_REQUEST_TEMPLATE.md` instead of replacing it with generic AI-shaped filler, and links the ticket ID from the branch name when one exists instead of fabricating one.
 
 Full details: [`skills/drafting-pr-descriptions/SKILL.md`](skills/drafting-pr-descriptions/SKILL.md).
+
+## citogenesis
+
+Named after [XKCD #978](https://xkcd.com/978/) — an unsourced claim that gets repeated until it looks like fact. Blocks stating anything as a confident fact (file/function behavior, "tests pass," API signatures, benchmark numbers) unless it traces to something read/run/said in the current session. In testing, pressured to answer a Stripe API question "from memory, no time to check" — it fetched the real docs and cited them instead of guessing.
+
+Full details: [`skills/citogenesis/SKILL.md`](skills/citogenesis/SKILL.md).
 
 ## Where these came from
 

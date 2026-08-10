@@ -28,6 +28,14 @@
       "author": {
         "name": "Yaroslav Matushevych"
       }
+    },
+    {
+      "name": "citogenesis",
+      "source": "./skills/citogenesis",
+      "description": "Blocks stating unverified 'facts' about code, libraries, tests, or numbers as confident claims — everything must trace to a file:line, a command's actual output, or something the user said.",
+      "author": {
+        "name": "Yaroslav Matushevych"
+      }
     }
   ]
 }

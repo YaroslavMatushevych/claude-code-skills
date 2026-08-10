@@ -1,0 +1,12 @@
+{
+  "name": "citogenesis",
+  "description": "Blocks stating unverified 'facts' about code, libraries, tests, or numbers as confident claims — everything must trace to a file:line, a command's actual output, or something the user said.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Yaroslav Matushevych",
+    "url": "https://github.com/YaroslavMatushevych"
+  },
+  "homepage": "https://github.com/YaroslavMatushevych/claude-code-skills",
+  "repository": "https://github.com/YaroslavMatushevych/claude-code-skills",
+  "license": "MIT"
+}

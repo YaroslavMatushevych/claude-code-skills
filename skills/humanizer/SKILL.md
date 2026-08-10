@@ -386,7 +386,7 @@ These extend the same tells above into the text engineers write while coding, no
 > ```
 
 ### 36. Commit/PR Filler and Session Noise
-**Problem:** Two tells specific to git history. (a) The same promotional language and generic positive conclusions from §4 and §25, aimed at a commit or PR body instead of an article ("this PR improves code quality and maintainability"). (b) Conversational exploration narrative bleeding into the message, e.g. "Initially tried X, but got errors, so abandoned it, and instead did Y" - none of which belongs in project history, only the shipped rationale does. Emoji in commit/PR titles (§18) is the same tell in this context too.
+**Problem:** Two tells specific to git history. (a) The same promotional language and generic positive conclusions from §4 and §25, aimed at a commit or PR body instead of an article ("this PR improves code quality and maintainability"). (b) Conversational exploration narrative bleeding into the message, e.g. "Initially tried X, but got errors, so abandoned it, and instead did Y." None of that belongs in project history; only the shipped rationale does. Emoji in commit/PR titles (§18) is the same tell in this context too.
 **Before:**
 > This PR improves the authentication flow and enhances overall code quality. Initially tried refactoring the whole AuthProvider, but that caused test failures, so instead just moved token refresh into a hook. 🚀
 **After:**

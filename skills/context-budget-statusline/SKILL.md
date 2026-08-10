@@ -6,7 +6,7 @@ description: Use when setting up or customizing a Claude Code statusLine to surf
 # Context Budget Statusline
 
 ## Overview
-A Claude Code `statusLine` script that adds cumulative session token usage (input + output) to the default statusline segments (cwd, git branch, model, context %, cost) and color-codes it so bloated context is visible before it degrades responses. Defaults follow Matt Pocock's rule of thumb: amber at 100k tokens, red at 150k tokens — the point he recommends clearing the window and starting a fresh session.
+A Claude Code `statusLine` script that adds cumulative session token usage (input + output) to the default statusline segments (cwd, git branch, model, context %, cost) and color-codes it so bloated context is visible before it degrades responses. Defaults follow Matt Pocock's rule of thumb: amber at 100k tokens, red at 150k tokens: the point he recommends clearing the window and starting a fresh session.
 
 ## When to use
 - You want a visual nudge to `/clear` or start a new session before context bloat hurts response quality.
@@ -32,9 +32,9 @@ A Claude Code `statusLine` script that adds cumulative session token usage (inpu
    ```
 
 ## Customizing colors
-Colors are plain ANSI 256 vars near the top of the script (`PRIMARY`, `ACCENT`, `WHITE`, `GREY`, `AMBER`, `RED`). Change the escape codes to match your own terminal theme. Don't bake a specific employer's brand colors or wordmark into a personal/shared copy of this script — keep it generic so it's safe to publish.
+Colors are plain ANSI 256 vars near the top of the script (`PRIMARY`, `ACCENT`, `WHITE`, `GREY`, `AMBER`, `RED`). Change the escape codes to match your own terminal theme. Don't bake a specific employer's brand colors or wordmark into a personal/shared copy of this script. Keep it generic so it's safe to publish.
 
 ## Common mistakes
-- Forgetting `chmod +x` — the statusline just won't render, with no error surfaced.
+- Forgetting `chmod +x`: the statusline just won't render, with no error surfaced.
 - Editing the hardcoded numbers instead of the env vars, then losing the override when the script is updated.
-- Assuming `context_window.total_input_tokens` includes prior turns beyond the session — it's whatever Claude Code reports for the current session in the hook payload.
+- Assuming `context_window.total_input_tokens` includes prior turns beyond the session: it's whatever Claude Code reports for the current session in the hook payload.

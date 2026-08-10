@@ -1,6 +1,6 @@
 ---
 name: dont-lie
-description: Use before stating anything as fact — file/function behavior, API signatures, test results, benchmark numbers — that you haven't read, run, or been told this session.
+description: Use before stating anything as fact (file/function behavior, API signatures, test results, benchmark numbers) that you haven't read, run, or been told this session.
 ---
 
 # Don't Lie

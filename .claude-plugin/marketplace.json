@@ -1,0 +1,17 @@
+{
+  "name": "yaroslav-skills",
+  "owner": {
+    "name": "Yaroslav Matushevych",
+    "url": "https://github.com/YaroslavMatushevych"
+  },
+  "plugins": [
+    {
+      "name": "context-budget-statusline",
+      "source": "./skills/context-budget-statusline",
+      "description": "Claude Code statusline that tracks cumulative session token usage and color-codes it against configurable thresholds (default: amber at 100k, red at 150k) so you clear context before it bloats.",
+      "author": {
+        "name": "Yaroslav Matushevych"
+      }
+    }
+  ]
+}

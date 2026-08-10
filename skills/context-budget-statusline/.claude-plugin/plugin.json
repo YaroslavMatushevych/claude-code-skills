@@ -1,0 +1,12 @@
+{
+  "name": "context-budget-statusline",
+  "description": "Claude Code statusline that tracks cumulative session token usage and color-codes it against configurable thresholds so you clear context before it bloats.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Yaroslav Matushevych",
+    "url": "https://github.com/YaroslavMatushevych"
+  },
+  "homepage": "https://github.com/YaroslavMatushevych/claude-code-skills",
+  "repository": "https://github.com/YaroslavMatushevych/claude-code-skills",
+  "license": "MIT"
+}

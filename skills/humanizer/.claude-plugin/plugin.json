@@ -1,12 +1,18 @@
 {
   "name": "humanizer",
-  "description": "Strips AI writing tells from prose and code comments/commits/PRs. Inspired by Wikipedia's Signs of AI Writing project and blader/humanizer.",
-  "version": "1.0.0",
+  "description": "Remove signs of AI-generated writing from text, extended with patterns for code comments, docstrings, commits, and PRs. Based on blader/humanizer (MIT) and Wikipedia's Signs of AI Writing.",
+  "version": "2.9.1-yms.1",
   "author": {
-    "name": "Yaroslav Matushevych",
-    "url": "https://github.com/YaroslavMatushevych"
+    "name": "blader",
+    "url": "https://github.com/blader"
   },
-  "homepage": "https://github.com/YaroslavMatushevych/claude-code-skills",
+  "contributors": [
+    {
+      "name": "Yaroslav Matushevych",
+      "url": "https://github.com/YaroslavMatushevych"
+    }
+  ],
+  "homepage": "https://github.com/blader/humanizer",
   "repository": "https://github.com/YaroslavMatushevych/claude-code-skills",
   "license": "MIT",
   "keywords": ["writing", "editing", "ai-detection", "humanize", "prose", "style"]

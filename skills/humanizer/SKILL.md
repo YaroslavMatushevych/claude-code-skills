@@ -33,7 +33,6 @@ Never invent a fact, name, number, date, or citation that isn't in the source. C
 |---|---|
 | Comment restates the line (`// increment counter` above `i++`) | Delete, or explain why not what — see [`committing-with-intent`](../committing-with-intent/SKILL.md) |
 | Docstring padding ("This function is responsible for handling the logic of...") | State what it does in one plain clause |
-| Apology/hedge comments ("TODO: sorry, quick hack") | State the actual constraint, or file a ticket |
 | PR/commit filler ("This PR improves code quality and maintainability") | See [`drafting-pr-descriptions`](../drafting-pr-descriptions/SKILL.md) — name the real change |
 | Emoji in commit/PR titles | Remove |
 

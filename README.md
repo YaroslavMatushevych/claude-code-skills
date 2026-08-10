@@ -9,7 +9,7 @@ Install the whole marketplace once, then pick which skills to install:
 /plugin install context-budget-statusline@yaroslav-skills
 /plugin install committing-with-intent@yaroslav-skills
 /plugin install drafting-pr-descriptions@yaroslav-skills
-/plugin install citogenesis@yaroslav-skills
+/plugin install dont-lie@yaroslav-skills
 ```
 
 ## context-budget-statusline
@@ -66,11 +66,11 @@ Structures PR descriptions around what/why, risk, and testing *actually done* �
 
 Full details: [`skills/drafting-pr-descriptions/SKILL.md`](skills/drafting-pr-descriptions/SKILL.md).
 
-## citogenesis
+## dont-lie
 
-Named after [XKCD #978](https://xkcd.com/978/) — an unsourced claim that gets repeated until it looks like fact. Blocks stating anything as a confident fact (file/function behavior, "tests pass," API signatures, benchmark numbers) unless it traces to something read/run/said in the current session. In testing, pressured to answer a Stripe API question "from memory, no time to check" — it fetched the real docs and cited them instead of guessing.
+Blocks stating a fact with no source — file/function behavior, "tests pass," API signatures, numbers. Everything must trace to a file:line, a command's output, or the user. No source, say "not checked."
 
-Full details: [`skills/citogenesis/SKILL.md`](skills/citogenesis/SKILL.md).
+Full details: [`skills/dont-lie/SKILL.md`](skills/dont-lie/SKILL.md).
 
 ## Where these came from
 

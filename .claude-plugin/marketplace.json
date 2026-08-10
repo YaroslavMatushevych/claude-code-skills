@@ -30,9 +30,9 @@
       }
     },
     {
-      "name": "citogenesis",
-      "source": "./skills/citogenesis",
-      "description": "Blocks stating unverified 'facts' about code, libraries, tests, or numbers as confident claims — everything must trace to a file:line, a command's actual output, or something the user said.",
+      "name": "dont-lie",
+      "source": "./skills/dont-lie",
+      "description": "Blocks stating unverified facts — file/function behavior, tests, API signatures, numbers — unless grounded in something read, run, or said this session.",
       "author": {
         "name": "Yaroslav Matushevych"
       }

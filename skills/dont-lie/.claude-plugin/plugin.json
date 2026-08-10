@@ -1,6 +1,6 @@
 {
-  "name": "citogenesis",
-  "description": "Blocks stating unverified 'facts' about code, libraries, tests, or numbers as confident claims — everything must trace to a file:line, a command's actual output, or something the user said.",
+  "name": "dont-lie",
+  "description": "Blocks stating unverified facts — file/function behavior, tests, API signatures, numbers — unless grounded in something read, run, or said this session.",
   "version": "1.0.0",
   "author": {
     "name": "Yaroslav Matushevych",

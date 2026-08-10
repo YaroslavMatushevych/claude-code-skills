@@ -10,6 +10,7 @@ Install the whole marketplace once, then pick which skills to install:
 /plugin install committing-with-intent@yaroslav-skills
 /plugin install drafting-pr-descriptions@yaroslav-skills
 /plugin install dont-lie@yaroslav-skills
+/plugin install humanizer@yaroslav-skills
 ```
 
 ## context-budget-statusline
@@ -71,6 +72,12 @@ Full details: [`skills/drafting-pr-descriptions/SKILL.md`](skills/drafting-pr-de
 Blocks stating a fact with no source — file/function behavior, "tests pass," API signatures, numbers. Everything must trace to a file:line, a command's output, or the user. No source, say "not checked."
 
 Full details: [`skills/dont-lie/SKILL.md`](skills/dont-lie/SKILL.md).
+
+## humanizer
+
+Not mine. Vendored from [blader/humanizer](https://github.com/blader/humanizer) (MIT, 34.6k★). Strips AI writing tells (em dashes, "it's not just X, it's Y", rule-of-three, filler, signposting) from text. Full credit to the original author, license copied as-is: [`skills/humanizer/LICENSE`](skills/humanizer/LICENSE).
+
+Full details: [`skills/humanizer/SKILL.md`](skills/humanizer/SKILL.md).
 
 ## Where these came from
 

@@ -36,6 +36,15 @@
       "author": {
         "name": "Yaroslav Matushevych"
       }
+    },
+    {
+      "name": "humanizer",
+      "source": "./skills/humanizer",
+      "description": "Remove signs of AI-generated writing from text. Vendored from blader/humanizer (MIT).",
+      "author": {
+        "name": "blader",
+        "url": "https://github.com/blader"
+      }
     }
   ]
 }

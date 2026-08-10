@@ -1,0 +1,12 @@
+{
+  "name": "drafting-pr-descriptions",
+  "description": "PR descriptions structured around what/why, risk, and testing actually done, matching the repo's own PR template instead of generic AI-sounding filler.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Yaroslav Matushevych",
+    "url": "https://github.com/YaroslavMatushevych"
+  },
+  "homepage": "https://github.com/YaroslavMatushevych/claude-code-skills",
+  "repository": "https://github.com/YaroslavMatushevych/claude-code-skills",
+  "license": "MIT"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "committing-with-intent",
+  "description": "Commit messages that explain why not what, plus hard guardrails against force-push and direct-to-main pushes without confirmation.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Yaroslav Matushevych",
+    "url": "https://github.com/YaroslavMatushevych"
+  },
+  "homepage": "https://github.com/YaroslavMatushevych/claude-code-skills",
+  "repository": "https://github.com/YaroslavMatushevych/claude-code-skills",
+  "license": "MIT"
+}

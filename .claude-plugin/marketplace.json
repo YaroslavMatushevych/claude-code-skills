@@ -12,6 +12,22 @@
       "author": {
         "name": "Yaroslav Matushevych"
       }
+    },
+    {
+      "name": "committing-with-intent",
+      "source": "./skills/committing-with-intent",
+      "description": "Commit messages that explain why not what, plus hard guardrails against force-push and direct-to-main pushes without confirmation.",
+      "author": {
+        "name": "Yaroslav Matushevych"
+      }
+    },
+    {
+      "name": "drafting-pr-descriptions",
+      "source": "./skills/drafting-pr-descriptions",
+      "description": "PR descriptions structured around what/why, risk, and testing actually done, matching the repo's own PR template instead of generic AI-sounding filler.",
+      "author": {
+        "name": "Yaroslav Matushevych"
+      }
     }
   ]
 }

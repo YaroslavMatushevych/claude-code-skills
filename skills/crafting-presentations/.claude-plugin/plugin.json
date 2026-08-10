@@ -1,7 +1,7 @@
 {
   "name": "crafting-presentations",
   "description": "Build a slide-deck presentation in any tool: minimal on-slide text with real stats, everything else in speaker notes, paced reveals, progressive builds, memes, and slide-to-slide narrative flow.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Yaroslav Matushevych",
     "url": "https://github.com/YaroslavMatushevych"

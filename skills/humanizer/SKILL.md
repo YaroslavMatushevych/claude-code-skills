@@ -1,16 +1,14 @@
 ---
 name: humanizer
 description: |
-  Remove signs of AI-generated writing from text. Use when editing or reviewing
-  text to make it sound more natural and human-written. Based on Wikipedia's
-  comprehensive "Signs of AI writing" guide, extended with patterns for code
-  comments, docstrings, commits, and PR descriptions. Detects and fixes patterns
-  including: inflated symbolism, promotional language, superficial -ing analyses,
-  vague attributions, em dash overuse, rule of three, AI vocabulary words, passive
-  voice, negative parallelisms, filler phrases, and redundant code comments.
+  Use when text sounds AI-generated or needs to sound more natural and human-written:
+  prose, docs, comments, commits, or PR descriptions with em dashes, filler phrases,
+  forced rule-of-three, promotional language ("vibrant", "boasts a"), vague
+  attributions ("experts believe"), signposting ("let's dive in"), or redundant
+  code comments that just restate the line above them.
 license: MIT
 metadata:
-  version: "2.9.1-yms.1"
+  version: "2.9.1-yms.2"
   extends: "blader/humanizer@2.9.1 (https://github.com/blader/humanizer)"
 ---
 
@@ -456,4 +454,5 @@ Key insight from Wikipedia: "LLMs use statistical algorithms to guess what shoul
 
 ## Version History (this fork)
 
+- **2.9.1-yms.2** - Rewrote the frontmatter `description` to lead with "Use when" and drop the pattern-list workflow summary, per this repo's own `writing-skills` Skill Discovery Optimization guidance (a description that summarizes process gives agents a shortcut to skip the full skill body). No change to the pattern content itself.
 - **2.9.1-yms.1** - Restored the full upstream 2.9.1 text (patterns 1-33, Invocation Modes, Detection Guidance, Personality and Soul, Voice Calibration) after an earlier over-aggressive condensation had cut it to a bare table. Added CODE PATTERNS (§34-36) for comments, docstrings, commits, and PRs, cross-referenced to this repo's `committing-with-intent` and `drafting-pr-descriptions` skills. See upstream's own Version History (2.0.0-2.9.1) at https://github.com/blader/humanizer for everything before this fork.

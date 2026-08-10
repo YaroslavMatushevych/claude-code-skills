@@ -18,7 +18,7 @@ A slide is a companion to a live speaker, not a document. On-slide text competes
 
 Every presentation tool has a speaker-notes field: PowerPoint's and Keynote's notes pane, Google Slides' speaker notes, a Marp/reveal.js `<!-- notes -->` comment, LaTeX Beamer's `\note{}`, or a `notes` field if the deck is code. Use it; don't fold explanation into the slide because the notes field is easy to forget.
 
-Write notes in first-person spoken voice with real specifics ("Jarred Sumner, 22, taught himself Zig because he hated how long Babel took"), not a summary of the slide. **Run all new copy, on-slide text and notes both, through the `humanizer` skill before calling a deck done.** Notes should sound like a person talking, not a teleprompter script; if you have a sample of how you actually talk, use humanizer's voice-calibration mode with it.
+Write notes in first-person spoken voice with real specifics ("Jarred Sumner, 22, taught himself Zig because he hated how long Babel took"), not a summary of the slide. **If the `humanizer` skill is installed, run all new copy, on-slide text and notes both, through it before calling a deck done** (it's a separate plugin in this same marketplace; install it alongside this one for that step). Notes should sound like a person talking, not a teleprompter script; if you have a sample of how you actually talk and humanizer is installed, use its voice-calibration mode with it.
 
 ## Type scale
 Relative hierarchy, independent of tool:
@@ -47,7 +47,7 @@ For a joke or a reveal, sequence it as explicit timed phases (appear, hold, exit
 Advance one point at a time with the same input that advances slides (click, right arrow, space), falling through to the next slide once a slide's points run out. In slideware this is a build-order checkbox; in code it's a step index and a render function keyed to it. Either way: don't put a slide's whole argument on screen before the speaker has said the first part of it.
 
 ## Memes
-One meme earns its place if it's the analogy the audience already has in their head before you show it. Caption it on the image itself, not in a separate text block. If you can't say where an image came from, don't ship it as if it proves something (the `dont-lie` rule applies to visuals too).
+One meme earns its place if it's the analogy the audience already has in their head before you show it. Caption it on the image itself, not in a separate text block. If you can't say where an image came from, don't ship it as if it proves something: unsourced claims apply to visuals too, not just text (see the `dont-lie` skill, a separate plugin in this marketplace, if it's installed).
 
 ## Slide-to-slide flow
 Write the notes for the whole talk end to end first, then split them into per-slide fields, not slide by slide in isolation; a deck written slide-by-slide reads like a stack of disconnected posts instead of one talk. Each slide's closing note should set up the next slide's premise. A working example: a slide's last note line is "next slide we'll see what actually fixed this," and the next slide is exactly that.

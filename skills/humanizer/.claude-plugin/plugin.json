@@ -1,7 +1,7 @@
 {
   "name": "humanizer",
   "description": "Remove signs of AI-generated writing from text, extended with patterns for code comments, docstrings, commits, and PRs. Based on blader/humanizer (MIT) and Wikipedia's Signs of AI Writing.",
-  "version": "2.9.1-yms.1",
+  "version": "2.9.1-yms.2",
   "author": {
     "name": "blader",
     "url": "https://github.com/blader"

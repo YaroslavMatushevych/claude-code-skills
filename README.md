@@ -75,7 +75,7 @@ Full details: [`skills/dont-lie/SKILL.md`](skills/dont-lie/SKILL.md).
 
 ## humanizer
 
-Not mine. Vendored from [blader/humanizer](https://github.com/blader/humanizer) (MIT, 34.6k★). Strips AI writing tells (em dashes, "it's not just X, it's Y", rule-of-three, filler, signposting) from text. Full credit to the original author, license copied as-is: [`skills/humanizer/LICENSE`](skills/humanizer/LICENSE).
+Strips AI writing tells (em dashes, "it's not just X, it's Y", rule-of-three, filler, signposting) from prose, plus a code-specific table for comments/docstrings/commits/PRs not covered by the original. Inspired by [blader/humanizer](https://github.com/blader/humanizer) (MIT, 34.6k★) and the Wikipedia [Signs of AI Writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) project it's built on — condensed and extended here, not a copy.
 
 Full details: [`skills/humanizer/SKILL.md`](skills/humanizer/SKILL.md).
 

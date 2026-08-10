@@ -36,7 +36,7 @@ Details: [`skills/drafting-pr-descriptions/SKILL.md`](skills/drafting-pr-descrip
 
 ## dont-lie
 
-Don't state anything as fact, code behavior or any real-world date/name/statistic, unless you can point to it: a file:line, a command's actual output, a source you actually checked, or something the user said. No source, say "not checked."
+Don't state anything as fact, code behavior or any real-world date/name/statistic, unless you can point to it: a file:line, a command's actual output, a source you actually checked, or the user asserting it with ownership, not relaying their own hazy memory. No source, say "not checked." Re-checks when a claim's destination gets more permanent (casual chat to client slide) even if already discussed earlier.
 
 Details: [`skills/dont-lie/SKILL.md`](skills/dont-lie/SKILL.md).
 

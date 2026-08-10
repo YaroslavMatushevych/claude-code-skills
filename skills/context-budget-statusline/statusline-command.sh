@@ -1,10 +1,17 @@
 #!/bin/sh
 # Claude Code status line — token-budget theme
 #
-# Shows cwd / git branch / model / context% / cumulative session tokens / cost.
-# Session token usage is color-coded so you notice before context bloat hurts
-# response quality — defaults follow Matt Pocock's rule of thumb: clear the
-# window (/clear or new session) once you're north of ~150k tokens.
+# Shows cwd / git branch / model / context% / context tokens / cost.
+# The token segment is the same underlying number as ctx:%, just in absolute
+# tokens instead of a percentage — it's what's currently sitting in the
+# context window (from context_window.total_input_tokens/total_output_tokens
+# in the hook payload), not a lifetime sum of everything the session has ever
+# used. It drops after /compact or /clear, same as ctx:%.
+# Color-coded so you notice before context bloat hurts response quality —
+# defaults follow Matt Pocock's rule of thumb: clear the window (/clear or
+# new session) once you're north of ~150k tokens. Thresholds are absolute
+# token counts, not scaled to context_window_size, so on a 1M-token extended
+# context model they fire at ~10-15% of actual capacity, not ~75%.
 #
 # Thresholds are overridable via env vars (export before launching Claude Code):
 #   STATUSLINE_AMBER_THRESHOLD (default 100000)
@@ -25,7 +32,7 @@ fi
 # Context used percentage
 used=$(echo "$input" | jq -r '.context_window.used_percentage // empty')
 
-# Token usage - cumulative session total
+# Token usage - current context window contents (drops after /compact/clear)
 total_input=$(echo "$input" | jq -r '.context_window.total_input_tokens // 0')
 total_output=$(echo "$input" | jq -r '.context_window.total_output_tokens // 0')
 tokens_used=$((total_input + total_output))

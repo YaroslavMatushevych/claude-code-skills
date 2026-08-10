@@ -1,12 +1,12 @@
 ---
 name: context-budget-statusline
-description: Use when setting up or customizing a Claude Code statusLine to surface running session token usage, or when applying Matt Pocock's rule of clearing the context window around 150k tokens via color-coded thresholds.
+description: Use when setting up or customizing a Claude Code statusLine to surface the current context window's token count, or when applying Matt Pocock's rule of clearing the context window around 150k tokens via color-coded thresholds.
 ---
 
 # Context Budget Statusline
 
 ## Overview
-A Claude Code `statusLine` script that adds cumulative session token usage (input + output) to the default statusline segments (cwd, git branch, model, context %, cost) and color-codes it so bloated context is visible before it degrades responses. Defaults follow Matt Pocock's rule of thumb: amber at 100k tokens, red at 150k tokens: the point he recommends clearing the window and starting a fresh session.
+A Claude Code `statusLine` script that adds the current context window's token count (input + output, in absolute tokens rather than a percentage) to the default statusline segments (cwd, git branch, model, context %, cost) and color-codes it so bloated context is visible before it degrades responses. This is the same underlying number as the `ctx:%` segment, just in raw tokens instead of a percentage: it reflects what's in the context window right now, not a lifetime total, and it drops after `/compact` or `/clear` same as `ctx:%` does. Defaults follow Matt Pocock's rule of thumb: amber at 100k tokens, red at 150k tokens: the point he recommends clearing the window and starting a fresh session.
 
 ## When to use
 - You want a visual nudge to `/clear` or start a new session before context bloat hurts response quality.
@@ -36,5 +36,7 @@ Colors are plain ANSI 256 vars near the top of the script (`PRIMARY`, `ACCENT`, 
 
 ## Common mistakes
 - Forgetting `chmod +x`: the statusline just won't render, with no error surfaced.
+- `jq` not installed: same failure mode, a blank statusline with no error. Install it (`brew install jq` / `apt install jq`) before debugging the script itself.
 - Editing the hardcoded numbers instead of the env vars, then losing the override when the script is updated.
-- Assuming `context_window.total_input_tokens` includes prior turns beyond the session: it's whatever Claude Code reports for the current session in the hook payload.
+- Assuming the token segment is a lifetime/cumulative session total: it's the current context window's contents (`context_window.total_input_tokens` + `total_output_tokens`), the same number `ctx:%` is computed from. It drops after `/compact` or `/clear`, it doesn't just keep climbing.
+- Assuming the 100k/150k defaults scale with context window size: they're absolute token counts. On a 1M-token extended-context model they still fire at ~100k/150k tokens, i.e. ~10-15% of capacity, not ~50%/75%. Raise the env var overrides if you're on an extended-context model and want the same relative trigger point.

@@ -16,7 +16,7 @@ Install the marketplace once, then install whichever skills you want:
 
 ## context-budget-statusline
 
-Adds cumulative session token usage to the statusline, next to cwd/branch/model/cost, and color-codes it: amber at 100k tokens, red at 150k. Follows Matt Pocock's rule of thumb for when to clear context and start fresh. Thresholds are configurable via env vars.
+Adds the current context window's token count to the statusline, next to cwd/branch/model/cost, and color-codes it: amber at 100k tokens, red at 150k. Follows Matt Pocock's rule of thumb for when to clear context and start fresh. Thresholds are configurable via env vars.
 
 Install and details: [`skills/context-budget-statusline/SKILL.md`](skills/context-budget-statusline/SKILL.md).
 

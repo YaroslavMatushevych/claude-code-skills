@@ -11,6 +11,7 @@ Install the marketplace once, then install whichever skills you want:
 /plugin install drafting-pr-descriptions@yaroslav-skills
 /plugin install dont-lie@yaroslav-skills
 /plugin install humanizer@yaroslav-skills
+/plugin install crafting-presentations@yaroslav-skills
 ```
 
 ## context-budget-statusline
@@ -44,6 +45,12 @@ Details: [`skills/dont-lie/SKILL.md`](skills/dont-lie/SKILL.md).
 Removes AI writing tells from prose (em dashes, forced rule-of-three, filler phrases, signposting like "let's dive in") and extends the same idea to code: redundant comments, padded docstrings, generic PR/commit filler. Built on [blader/humanizer](https://github.com/blader/humanizer) (MIT) and Wikipedia's [Signs of AI Writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) project: patterns 1-33 are theirs, 34-36 (code comments/docstrings/commits/PRs) added here by me.
 
 Details: [`skills/humanizer/SKILL.md`](skills/humanizer/SKILL.md).
+
+## crafting-presentations
+
+Works for any presentation tool (Keynote, PowerPoint, Google Slides, Marp/reveal.js, Beamer, or code): minimal on-slide text (a number, a phrase, a comparison), everything else (story, caveats, transitions) in speaker notes. Relative type scale, color pattern, paced reveals, and meme guidance, with one worked React/Tailwind/Framer Motion example for anyone building a deck as code. Calls for `humanizer` on all new copy before shipping.
+
+Details: [`skills/crafting-presentations/SKILL.md`](skills/crafting-presentations/SKILL.md).
 
 ## Commit convention
 

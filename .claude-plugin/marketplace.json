@@ -38,6 +38,14 @@
       }
     },
     {
+      "name": "crafting-presentations",
+      "source": "./skills/crafting-presentations",
+      "description": "Build a slide-deck presentation in any tool: minimal on-slide text with real stats, everything else in speaker notes, paced reveals, progressive builds, memes, and slide-to-slide narrative flow.",
+      "author": {
+        "name": "Yaroslav Matushevych"
+      }
+    },
+    {
       "name": "humanizer",
       "source": "./skills/humanizer",
       "description": "Remove signs of AI-generated writing from text, extended with patterns for code comments, docstrings, commits, and PRs. Based on blader/humanizer (MIT) and Wikipedia's Signs of AI Writing.",

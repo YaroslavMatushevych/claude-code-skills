@@ -1,6 +1,6 @@
 {
   "name": "dont-lie",
-  "description": "Blocks stating unverified facts — file/function behavior, tests, API signatures, numbers — unless grounded in something read, run, or said this session.",
+  "description": "Blocks stating unverified facts (code behavior, tests, API signatures, or any real-world date/name/statistic) unless grounded in something read, run, computed, or said this session.",
   "version": "1.0.0",
   "author": {
     "name": "Yaroslav Matushevych",

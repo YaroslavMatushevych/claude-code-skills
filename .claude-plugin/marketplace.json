@@ -33,7 +33,7 @@
     {
       "name": "dont-lie",
       "source": "./skills/dont-lie",
-      "description": "Blocks stating unverified facts (code behavior, tests, API signatures, or any real-world date/name/statistic) unless grounded in something read, run, computed, or said this session. Also blocks laundering a user's own hazy memory into confirmed fact, and re-checks when a claim's destination gets more permanent or higher-stakes.",
+      "description": "Blocks stating unverified facts (code behavior, tests, API signatures, URLs, version numbers, prices, or any real-world date/name/statistic) unless grounded in something read, run, computed, fetched, or said this session. Also blocks laundering a user's own hazy memory into confirmed fact, and re-checks when a claim's destination gets more permanent or higher-stakes.",
       "author": {
         "name": "Yaroslav Matushevych"
       }

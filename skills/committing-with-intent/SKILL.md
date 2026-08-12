@@ -55,3 +55,6 @@ These hold regardless of framing: "just your own branch," "the user said hurry,"
 | Match existing repo commit style | Impose Conventional Commits on a repo that doesn't use it |
 | Ask before force-push, every time | Treat one earlier "yes" as standing permission |
 | Stop on non-fast-forward and ask | Auto-rebase/force-push to clear a rejection |
+
+## Optional: mechanical backstop
+The rules above are prompt-based: they hold under normal pressure, but they still rely on the model choosing to follow them in the moment. `scripts/block-unsafe-push.sh` in this skill is an opt-in `PreToolUse` hook that blocks `git push --force`/`--force-with-lease` and any push naming `main`/`master`/`trunk` explicitly, before the command runs, no model judgment involved. Installing this plugin doesn't wire it in; see the comment header in the script for how to register it in `settings.json`. It's plain string matching, not a real git-aware check, so it's a backstop for the common case, not a substitute for the rule itself (idea prompted by comparing against [mattpocock/skills' git-guardrails-claude-code](https://github.com/mattpocock/skills/blob/main/skills/misc/git-guardrails-claude-code/SKILL.md), which blocks `git push` outright; this one only blocks what this skill already forbids, so ordinary feature-branch pushes still work unprompted).

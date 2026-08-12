@@ -16,6 +16,17 @@ Reviewers' top complaint about AI-written PRs is effort asymmetry: a description
 
 Before filling any of this in, check for the repo's own template: `find .github -iname 'PULL_REQUEST_TEMPLATE*' -o -iname 'pull_request_template*'`. If one exists, fill *its* sections instead of replacing them with the generic shape above.
 
+## Size gates the length
+A description longer than the diff it's describing is its own tell. Scale the four sections to the diff, don't fill all of them out of habit:
+| Diff size | Budget |
+|---|---|
+| Small (under ~50 lines) | What & why in 1-2 sentences, skip Risk if genuinely none, one-line Testing |
+| Medium (~50-200 lines) | The full four-part shape above |
+| Large (200+ lines) | Full shape, plus a short files-changed list with suggested review order if the diff touches more than a handful of files |
+
+## When the why isn't known
+Don't invent a plausible-sounding motivation to fill the section. Ask: what bug or ticket prompted this, what broke or was slow before, what does this unblock. A description that honestly says "why: not stated, ask the author" is better than a fabricated rationale that happens to sound right.
+
 ## Don'ts
 - Don't claim testing or verification that didn't happen.
 - Don't pad with emoji or bullet-heavy generic filler ("This PR improves performance and reliability ✨").
@@ -39,7 +50,7 @@ Before filling any of this in, check for the repo's own template: `find .github 
 ## Quick reference
 | Section | Skip only if | Never |
 |---|---|---|
-| What & why | Never skip | Say "various improvements" |
+| What & why | Never skip | Say "various improvements," or invent a motivation nobody stated |
 | Risk | Truly none, then say so explicitly | Omit the section silently |
 | Testing | Never skip | Claim untested work as tested |
 | Ticket link | No ticket exists | Fabricate a ticket ID |

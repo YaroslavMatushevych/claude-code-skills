@@ -22,7 +22,7 @@ Install and details: [`skills/context-budget-statusline/SKILL.md`](skills/contex
 
 ## committing-with-intent
 
-Commit messages should explain why a change was made, not restate the diff. Also enforces a hard rule: never force-push or push to a shared/default branch without asking first, regardless of deadline pressure or "just handle it" instructions. Pressure-tested against exactly that scenario: it held.
+Commit messages should explain why a change was made, not restate the diff. Also enforces a hard rule: never force-push or push to a shared/default branch without asking first, regardless of deadline pressure or "just handle it" instructions. Pressure-tested against exactly that scenario: it held. Ships an optional `PreToolUse` hook script as a mechanical backstop for the same two rules, for anyone who wants enforcement that doesn't depend on the model choosing to comply.
 
 Based on recurring complaints from Hacker News, Reddit, and a filed [Claude Code GitHub issue](https://github.com/anthropics/claude-code/issues/33402) about agents force-pushing without confirmation.
 
@@ -36,7 +36,7 @@ Details: [`skills/drafting-pr-descriptions/SKILL.md`](skills/drafting-pr-descrip
 
 ## dont-lie
 
-Don't state anything as fact, code behavior or any real-world date/name/statistic, unless you can point to it: a file:line, a command's actual output, a source you actually checked, or the user asserting it with ownership, not relaying their own hazy memory. No source, say "not checked." Re-checks when a claim's destination gets more permanent (casual chat to client slide) even if already discussed earlier.
+Don't state anything as fact, code behavior or any real-world date/name/statistic/URL/price, unless you can point to it: a file:line, a command's actual output, a source you actually fetched or checked, or the user asserting it with ownership, not relaying their own hazy memory. No source, say "not checked." Includes a claim-type-to-verification-command reference table (package versions, URLs, dates, repo state). Re-checks when a claim's destination gets more permanent (casual chat to client slide) even if already discussed earlier.
 
 Details: [`skills/dont-lie/SKILL.md`](skills/dont-lie/SKILL.md).
 

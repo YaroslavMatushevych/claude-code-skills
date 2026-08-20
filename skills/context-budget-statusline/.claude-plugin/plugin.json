@@ -1,7 +1,7 @@
 {
   "name": "context-budget-statusline",
-  "description": "Claude Code statusline that shows the current context window's token count and color-codes it against configurable thresholds so you clear context before it bloats.",
-  "version": "1.0.1",
+  "description": "Claude Code statusline that shows the current context window's token count and cache freshness, color-coded against configurable thresholds so you clear context before it bloats or your next message misses a cold cache.",
+  "version": "1.1.2",
   "author": {
     "name": "Yaroslav Matushevych",
     "url": "https://github.com/YaroslavMatushevych"

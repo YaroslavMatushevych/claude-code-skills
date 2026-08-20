@@ -9,7 +9,7 @@
     {
       "name": "context-budget-statusline",
       "source": "./skills/context-budget-statusline",
-      "description": "Claude Code statusline that shows the current context window's token count and color-codes it against configurable thresholds (default: amber at 100k, red at 150k) so you clear context before it bloats.",
+      "description": "Claude Code statusline that shows the current context window's token count and cache freshness, color-coded against configurable thresholds so you clear context before it bloats or your next message misses a cold cache.",
       "author": {
         "name": "Yaroslav Matushevych"
       }
